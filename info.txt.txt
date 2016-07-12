@@ -1,0 +1,3 @@
+To run the program:
+Libraries need to be linked
+Resources directory needs to be specified in DataFeed.java servlet.

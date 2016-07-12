@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <servlet>
+        <servlet-name>DataFeed</servlet-name>
+        <servlet-class>Servlets.DataFeed</servlet-class>
+    </servlet> 
+    
+     <servlet>
+        <servlet-name>DyenaBoxesController</servlet-name>
+        <servlet-class>Servlets.DyenaBoxesController</servlet-class>
+    </servlet> 
+    
+  <servlet>
+        <servlet-name>Interface</servlet-name>
+        <servlet-class>Servlets.Interface</servlet-class>
+    </servlet> 
+ 
+
+    <servlet-mapping>
+        <servlet-name>DataFeed</servlet-name>
+        <url-pattern>/DataFeed</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>DyenaBoxesController</servlet-name>
+        <url-pattern>/DyenaBoxesController</url-pattern>
+    </servlet-mapping>
+   
+    <servlet-mapping>
+        <servlet-name>Interface</servlet-name>
+        <url-pattern>/Interface</url-pattern>
+    </servlet-mapping>
+   
+ 
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+      <welcome-file-list>
+        <welcome-file>DataFeed</welcome-file>
+    </welcome-file-list>
+</web-app>
